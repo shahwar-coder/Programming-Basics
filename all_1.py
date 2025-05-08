@@ -1,3 +1,19 @@
+# ============== [10/10] ===================
+def all_positive(list_of_nums):
+    """
+    Return true if every number in list is positive.
+    """
+    return all(num>0 for num in list_of_nums)
+
+if __name__ == "__main__":
+    try:
+        tokens = input("Enter integers separated by integers: ")
+        list_of_nums = list(map(int, tokens.split()))
+        print(all_positive(list_of_nums))
+    except ValueError:
+        print("Invalid Inputs!")
+
+# ============== [7/10] ===================
 '''
 # Example input 1:
 nums = [3, 14, 1, 9]
