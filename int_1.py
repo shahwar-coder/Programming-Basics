@@ -1,3 +1,5 @@
+# int
+
 user_input = input()
 
 def str_to_int_possible(user_input):
