@@ -1,5 +1,5 @@
 '''
-Mutating alist:
+Mutating a list: "Multiple proofs of list being mutable // Printing the same list but it gets updated every time."
 '''
 
 # Define List:
