@@ -25,3 +25,10 @@ def f():
     return 1
 
 print(f.__doc__) # output : "hello" (1st one)
+
+```Q3. When no doctring what will it print?```
+def f():
+    pass
+
+print(f.__doc__)   # None
+# None will be printed
