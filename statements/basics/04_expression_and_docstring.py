@@ -11,8 +11,17 @@
 • Used for documentation; other string literals are just ignored expressions
 '''
 
+```Q1. Show how to print the docstring```
 def greet():
     "This function prints a greeting"   # docstring
     print("Hello")
 
 print(greet.__doc__)   # → This function prints a greeting (THIS IS THE OUTPT : PRINTING THE DOCSTRING)
+
+```Q2. Which one will be the docstring and get printed?```
+def f():
+    "hello"
+    "world"
+    return 1
+
+print(f.__doc__) # output : "hello" (1st one)
