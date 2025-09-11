@@ -31,3 +31,43 @@
 • You correctly identified when "\" is required
 '''
 
+
+'''
+Q1. Why is indentation important in Python, and what error occurs if you mix tabs and spaces?
+Ans: Indentation defines code blocks (suites). Python enforces consistent 
+indentation because it does not use braces {}. 
+Mixing tabs and spaces causes an IndentationError.
+
+Q2. Are spaces inside a statement meaningful in Python?
+Ans: Mostly no. For example, x=1+2 and x = 1 + 2 are equivalent.  
+But leading spaces (indentation) are meaningful, and style guides 
+like PEP 8 recommend spaces for readability.
+
+Q3. What is the difference between explicit and implicit line joining?
+Ans: 
+- Explicit line joining uses "\" to continue a statement to the next line.  
+- Implicit line joining happens automatically inside (), [], {}.  
+Example: 
+    total = (1 + 
+             2 + 
+             3)   # works without "\"
+
+Q4. Can semicolons be used in Python statements? 
+Ans: Yes. Multiple simple statements can be placed on the same line 
+using semicolons (;). Example: x=1; y=2; print(x+y)  
+However, it is discouraged for readability.
+
+Q5. (Coding)
+# Explicit line joining
+a = 1 + 2 + \
+    3 + 4
+print("Explicit join:", a)
+
+# Implicit line joining inside ()
+b = (1 + 2 +
+     3 + 4)
+print("Implicit join:", b)
+
+# Multiple simple statements in one line (with ;)
+x=10; y=20; print("Semicolons:", x+y)
+'''
