@@ -19,4 +19,26 @@
 ✅ Perfect illustration.
 ✔️ 2+3 is just an expression.
 ✔️ x=2+3 is an assignment statement (that contains the expression 2+3).
+
+Q1. Can every statement contain an expression?
+Ans: No. Not every statement contains an expression.  
+Examples: pass, continue, break are pure statements without expressions.
+
+Q2. Why is `if x > 0:` considered a statement?
+Ans: Because it is a control-flow instruction to Python (a statement).  
+Inside it, the condition `x > 0` is an expression that evaluates to True/False.
+
+Q3. What kinds of instructions are always statements?
+Ans: Statements like def, class, import, with, try/except/finally are 
+structural instructions. They cannot be reduced to just expressions.
+
+Q4. (Coding)
+# Expression only
+2 + 3     # evaluates to 5
+
+# Statement with expression
+x = 2 + 3   # assignment statement, contains the expression 2+3
+
+# Statement without expression
+pass      # no expression inside
 '''
