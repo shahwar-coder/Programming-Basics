@@ -22,6 +22,8 @@ and available at runtime for introspection.
 
 Q5. (Coding)
 # Try this:
+'''
+
 x: int = 10
 y: str
 
@@ -37,4 +39,17 @@ def greet(name: str) -> str:
     return "Hello " + name
 
 print("Function annotations:", greet.__annotations__)
+
+'''
+Module annotations: {'x': <class 'int'>, 'y': <class 'str'>}
+# Reason: At module level, __annotations__ collects variable type hints.
+# x bound to int, y annotated but unbound.
+
+Class annotations: {'name': <class 'str'>, 'age': <class 'int'>}
+# Reason: Inside a class, annotations go into Class.__annotations__.
+# Both 'name' and 'age' show up, regardless of default value.
+
+Function annotations: {'name': <class 'str'>, 'return': <class 'str'>}
+# Reason: Function.__annotations__ stores parameter and return type hints.
+# 'name' param is str, return type is str.
 '''
