@@ -58,6 +58,14 @@ def delegator():
 # Using the generator
 for value in delegator():
     print("Received:", value)
+'''
+Actual Output:
+Delegator: Before delegation
+Received: 1
+Received: 2
+Delegator: After delegation, got: Done
+Received: Back in delegator
+'''
 
 
 
