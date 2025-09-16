@@ -59,3 +59,14 @@ def delegator():
 for value in delegator():
     print("Received:", value)
 
+
+
+
+'''
+Q4. Why don’t you usually see StopIteration with generators?
+Ans: Because for-loops handle next() and StopIteration automatically.
+Example:
+'''
+
+def g(): yield "a"; yield "b"
+for val in g(): print(val)   # a, b (no StopIteration visible)
