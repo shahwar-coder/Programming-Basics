@@ -14,3 +14,14 @@ print(f())   # 42
 def g():
     return
 print(g())   # None
+
+
+
+'''
+Q2. How is the return statement different in normal functions vs generator functions?
+Ans:
+- Normal function: return gives a value back directly.  
+- Generator (with yield): return ends the generator.  
+  If it has a value, it raises StopIteration(value).  
+This value is only visible if caught or via 'yield from'.
+'''
