@@ -23,6 +23,7 @@ try:
 except ZeroDivisionError:
     print("Handling...")
     raise   # re-raises ZeroDivisionError
+# NOTE : If you use raise outside of an except block → RuntimeError: No active exception to reraise.
 
 
 
