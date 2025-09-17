@@ -20,3 +20,10 @@ print(sqrt is math.sqrt)      # ✅ True (from-imported name is same object)
 | Object identity          | alias is module object      | name is the exact same object |
 +--------------------------+-----------------------------+-------------------------------+
 '''
+
+
+'''
+Just safely say:
+-> Aliasing = another name for the whole module.
+-> From-import = pulls specific objects into current namespace.
+'''
