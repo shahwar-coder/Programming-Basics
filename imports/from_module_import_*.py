@@ -72,3 +72,12 @@ def hidden(): return "invisible"
 >>> from demo import *
 >>> print(func())    # works
 >>> print(hidden())  # NameError, not imported
+
+
+
+
+'''
+Important one-liners:
+-> _name → private by convention, skipped by *.
+-> __all__ → explicit whitelist for * imports.
+'''
