@@ -90,6 +90,14 @@ Explanation:
 - At that moment, both modules are already defined → no half-loaded module issue.
 '''
 
+'''
+📌 Fixing Circular Imports
+- Problem: modules import each other → one is half-loaded → errors.  
+- Quick fix: use **local imports** (inside functions/methods) → delays import until needed.  
+- Cleaner fix: refactor shared logic into a **common utility module**.  
+- Best practice: keep module dependencies one-directional, avoid cycles.  
+'''
+
 
 
 
