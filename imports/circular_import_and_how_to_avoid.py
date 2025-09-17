@@ -140,5 +140,7 @@ Explanation:
 - This breaks the circular dependency cycle.
 '''
 
-
+'''
+Think of common.py as a neutral “hub” module that stores shared code so other modules don’t have to reach into each other.
+'''
 
