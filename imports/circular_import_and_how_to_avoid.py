@@ -99,5 +99,46 @@ Explanation:
 '''
 
 
+'''
+✅ Refactored with Common Module: (ONE MORE WAY TO FIX)
+'''
+
+common.py
+------------
+def shared_helper():
+    print("Shared helper running")
+
+
+a.py
+------------
+import common
+
+def func_a():
+    print("func_a running")
+    common.shared_helper()
+
+b.py
+------------
+import common
+
+def func_b():
+    print("func_b running")
+    common.shared_helper()
+
+# On running a.py
+# func_a running
+# Shared helper running
+
+# On running b.py
+# func_b running
+# Shared helper running
+
+'''
+Explanation:
+- The logic that both `a` and `b` need is moved to common.py.
+- `a` and `b` now depend only on common, not on each other.
+- This breaks the circular dependency cycle.
+'''
+
 
 
