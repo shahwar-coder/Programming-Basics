@@ -28,3 +28,14 @@ Example:
 '''
 $ python -X importtime myscript.py
 # Output shows how long each import took.
+
+
+
+'''
+Q. What are best practices for import-time optimization?
+Ans:
+- Only import what’s needed.
+- Lazy-load heavy modules.
+- Use conditional imports for optional dependencies.
+- Profile before optimizing — don’t guess.
+'''
