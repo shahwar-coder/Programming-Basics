@@ -95,3 +95,27 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
+'''
+Q5. What pitfalls exist with running modules?
+Ans:
+- Running file.py directly breaks relative imports.
+- Forgetting __main__ guard makes code run on import.
+
+Example:
+# mypkg/sub.py
+from . import helper  # ❌ fails if run with python sub.py
+# ✅ Works with: python -m mypkg.sub
+'''
+
+
+
+'''
+Q6. What are best practices?
+Ans:
+- Always wrap script code in if __name__ == "__main__".
+- Keep a clean main() function for entry point.
+- Prefer python -m when running package modules.
+'''
