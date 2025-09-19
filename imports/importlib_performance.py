@@ -32,7 +32,7 @@ $ python -X importtime myscript.py
 
 
 '''
-Q. What are best practices for import-time optimization?
+Q3. What are best practices for import-time optimization?
 Ans:
 - Only import what’s needed.
 - Lazy-load heavy modules.
