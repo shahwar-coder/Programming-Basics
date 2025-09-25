@@ -2,6 +2,7 @@
 Example Problem (To see "while True" in action preventing Tracebacks, and continue taking inputs until not invalid).
 Find max of 3 elements :
 '''
+
 from typing import List
 def find_maximum(numbers: List[int])->int:
     """
@@ -24,3 +25,19 @@ def get_numbers(prompt: str)->List[int]:
 
 numbers=get_numbers("Enter numbers in one line separated by single space: ")
 print(find_maximum(numbers))
+
+
+'''
+# Why while True is powerful (summary):
+
+- Creates an infinite loop until explicitly broken.
+- Perfect for "retry until success" situations.
+- Prevents program crashes on invalid input (robust error handling).
+- Allows re-prompting the user without restarting the program.
+- Commonly used in:
+  - Input validation
+  - Menu-driven programs
+  - Servers/clients (long-running loops)
+  - Background tasks
+- Makes programs more efficient, user-friendly, and fault-tolerant.
+'''
