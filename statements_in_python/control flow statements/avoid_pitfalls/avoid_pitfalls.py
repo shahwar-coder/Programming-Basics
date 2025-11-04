@@ -68,3 +68,22 @@ For normal value comparison, use `==`.
 x = None
 if x is None:
     print("Empty")   # correct way
+
+
+
+'''
+Q6. How can we make control flow more readable and error-free?
+Ans:
+- Write clear, ordered conditions.  
+- Avoid mixing data types.  
+- Use early returns to reduce nesting.  
+- Remember: `==` for values, `is` for identity.
+Clean logic → fewer bugs.
+'''
+# Example
+def safe_check(x):
+    if x is None:
+        return "Missing"
+    if 0 < x < 10:
+        return "Valid"
+    return "Out of range"
