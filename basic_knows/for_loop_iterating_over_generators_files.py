@@ -1,5 +1,5 @@
 '''
-Q12. Can for loops iterate over generators or files?
+Q. Can for loops iterate over generators or files?
 Ans:
 Yes! For loops work with any object that follows the *iterator protocol*,  
 including generators, files, and custom iterable classes.
