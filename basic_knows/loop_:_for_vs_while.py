@@ -12,3 +12,16 @@ count = 0
 while count < 3:        # condition-driven
     print(count)
     count += 1
+
+
+
+'''
+Q. Why might a while loop be slower than a for loop?
+Ans:
+Because while checks a condition at every step  
+and doesn’t leverage iterator protocols —  
+it’s more flexible, but slightly less optimized for simple iteration.
+'''
+# Example
+# while = dynamic condition check each time
+# for = optimized iterator traversal
