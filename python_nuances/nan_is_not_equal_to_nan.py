@@ -9,3 +9,17 @@ import math
 x = float('nan') # creating a nan
 print(x == x)          # False  ← NaN never equals itself
 print(math.isnan(x))   # True
+
+
+
+'''
+Q. How does NaN behave in comparisons?
+Ans:
+NaN is **never equal to anything**, even itself.  
+`<`, `>`, and `==` all return False when NaN is involved.
+'''
+# Example
+import math
+x = float('nan')
+print(x == x, x > 0, x < 0)   # False False False
+
