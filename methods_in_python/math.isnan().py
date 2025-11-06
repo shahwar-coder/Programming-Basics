@@ -80,3 +80,15 @@ NaN is **never equal to anything**, even itself.
 import math
 x = float('nan')
 print(x == x, x > 0, x < 0)   # False False False
+
+
+
+
+'''
+Code Snippet to safely handle NaN:
+'''
+# Example
+import math
+data = [10.0, float('nan'), 5.5]
+cleaned = [x for x in data if not math.isnan(x)]
+print(cleaned)  # [10.0, 5.5]
