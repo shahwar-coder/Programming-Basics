@@ -38,3 +38,18 @@ print((10).__truediv__(4))  # 2.5  (same as 10 / 4)
 
 # __abs__() → absolute value
 print((-9).__abs__())   # 9  (same as abs(-9))
+
+
+
+'''
+Q3. How do built-in functions like abs() and operators internally work?
+Ans:
+Each operator or built-in function calls its corresponding dunder method.  
+For example:
+- `abs(x)` → `x.__abs__()`
+- `a + b` → `a.__add__(b)`
+- `a - b` → `a.__sub__(b)`
+'''
+# Example
+n = -7
+print(abs(n), n.__abs__())  # 7 7
