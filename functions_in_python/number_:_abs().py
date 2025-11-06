@@ -122,3 +122,16 @@ Python treats +0.0 and -0.0 as equal in numeric comparisons.
 # Example
 print(abs(-0.0))   # 0.0
 print(abs(0.0))    # 0.0
+
+
+
+'''
+Q10. What does abs() do for complex numbers?
+Ans:
+It returns the **magnitude** (distance from origin) of a complex number.  
+Mathematically: `|a + bj| = √(a² + b²)`
+'''
+# Example
+z = 3 + 4j
+print(abs(z))  # 5.0 → √(3² + 4²)
+
