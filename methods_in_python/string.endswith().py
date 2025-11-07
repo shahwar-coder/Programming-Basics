@@ -16,3 +16,7 @@ print(filename.endswith((".pdf", ".docx", ".txt")))   # True
 msg = "Welcome to Python programming"
 print(msg.endswith("Python", 0, 18))   # True   (checks within substring)
 print(msg.endswith("programming", 0, 25))  # False  (range ends before match)
+
+# Example 4: On empty string
+print("".endswith(""))   # True — every string (even empty) ends with ""
+
