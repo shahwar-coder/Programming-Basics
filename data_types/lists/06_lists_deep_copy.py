@@ -26,3 +26,12 @@ print("a:", a)         # [[1, 2], [3, 4]] → unchanged
 print("b:", b)         # [[99, 2], [3, 4]] → changed independently
 print(a is b)          # False (different outer lists)
 print(a[0] is b[0])    # False (different inner lists too)
+
+
+
+'''
+Q2. Are deep copies slower than shallow copies?
+Ans:
+Yes — `deepcopy()` takes more time and memory  
+because it recursively duplicates every nested element.
+'''
