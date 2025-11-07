@@ -18,6 +18,10 @@ print(data.split(','))
 text = "Python is fun to learn"
 print(text.split(' ', 2))  
 # ['Python', 'is', 'fun to learn']
+# Q. What is the behavior of split() with maxsplit argument?
+# Ans:
+# `maxsplit` limits how many splits occur.  
+# The remaining part of the string is kept as one final element.
 
 # Example 4: Splitting on newline characters
 para = "line1\nline2\nline3"
