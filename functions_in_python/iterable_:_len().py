@@ -36,7 +36,7 @@ print(len(tabbed))     # 5 (\t counts as one character)
 
 
 
-'''
+
 '''
 Q. What does len() do for lists?
 Ans:
@@ -46,7 +46,7 @@ Ans:
 nums = [10, 20, 30, 40]
 print(len(nums))       # 4
 print(len([]))         # 0
-'''
+
 
 
 '''
