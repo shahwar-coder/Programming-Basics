@@ -22,3 +22,15 @@ text = "hello world"
 print(text.index("world"))   # 6
 # print(text.index("java"))  # ValueError: substring not found
 
+
+
+'''
+Q3. What happens if find() or index() use start/end arguments?
+Ans:
+You can limit the search to a substring range using optional `start` and `end` indexes.
+'''
+# Example
+text = "banana"
+print(text.find("a", 2))     # 3 (search starts at index 2)
+print(text.find("a", 4, 6))  # 5 (search only in slice [4:6])
+
