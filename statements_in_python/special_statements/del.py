@@ -74,4 +74,39 @@ print("b after del a:", b)
 
 
 
+'''REVISION
+`del` → deletes by index or slice
+'''
+
+# Example 1: Delete element by index
+nums = [10, 20, 30, 40, 50]
+del nums[2]
+print(nums)           # [10, 20, 40, 50]
+
+# Example 2: Delete multiple elements using slice
+data = [1, 2, 3, 4, 5, 6]
+del data[1:4]
+print(data)           # [1, 5, 6]
+
+# Example 3: Delete all elements (same as clear())
+nums = [1, 2, 3, 4]
+del nums[:]
+print(nums)           # []
+
+# Example 4: Delete negative index
+letters = ['a', 'b', 'c', 'd']
+del letters[-1]
+print(letters)        # ['a', 'b', 'c']
+
+# Example 5: Delete every alternate element using slicing
+lst = [0, 1, 2, 3, 4, 5, 6]
+del lst[::2]
+print(lst)            # [1, 3, 5]
+
+# Example 6: Delete entire variable
+x = [100, 200, 300]
+del x
+# print(x)            # NameError: name 'x' is not defined
+
+
 
