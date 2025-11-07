@@ -116,3 +116,21 @@ Ans:
 ✅ Use `list()`, `tuple()`, or loop to consume it.
 '''
 
+
+
+'''
+|           Feature           | **sorted()**                                                 | **reversed()**                                                         |
+| :-------------------------: | :----------------------------------------------------------- | :--------------------------------------------------------------------- |
+|         **Purpose**         | Returns a **new sorted list** (ascending or descending)      | Returns an **iterator** that yields elements in reverse order          |
+|         **Works On**        | Any **iterable** (lists, tuples, sets, strings, dicts, etc.) | Only **sequence types** (must support `__len__()` and `__getitem__()`) |
+|       **Return Type**       | `list`                                                       | `reverse iterator` (e.g., `<list_reverseiterator>`)                    |
+|    **Modifies Original?**   | ❌ No (creates a new sorted list)                             | ❌ No (does not modify original)                                        |
+|        **Order Type**       | Sorts by **value** (ascending by default)                    | Reverses **existing order** (no sorting)                               |
+| **Custom Function Support** | ✅ Yes (`key`, `reverse` arguments)                           | ❌ No (`reversed()` just flips order)                                   |
+|         **Stable?**         | ✅ Yes (Timsort algorithm)                                    | Not applicable (no sorting involved)                                   |
+|     **Time Complexity**     | O(n log n)                                                   | O(1) to create iterator; O(n) to iterate                               |
+|        **Memory Use**       | Creates a new list (copies data)                             | Very low (lazy iterator)                                               |
+|  **Works with Sets/Dicts?** | ✅ Yes (sorts by keys for dicts)                              | ❌ No (unordered → not reversible)                                      |
+|         **Example**         | `sorted([3,1,2]) → [1,2,3]`                                  | `list(reversed([1,2,3])) → [3,2,1]`                                    |
+| **Empty Iterable Behavior** | Returns `[]`                                                 | Returns empty iterator                                                 |
+'''
