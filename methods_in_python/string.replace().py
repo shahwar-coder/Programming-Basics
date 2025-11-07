@@ -22,3 +22,25 @@ Strings are immutable; originals remain unchanged.
 s = "hello"
 s2 = s.replace("h", "H")
 print(s, s2)  # "hello" "Hello"
+
+
+
+'''
+Q3. How does replace() behave with count argument = 0?
+Ans:
+If `count = 0`, no replacements are made; the original string is returned unchanged.
+'''
+# Example
+text = "spam spam spam"
+print(text.replace("spam", "eggs", 0))  # "spam spam spam"
+
+
+
+'''
+Q4. What happens if the substring is not found in replace()?
+Ans:
+No error is raised — if `old` isn’t found, the original string is returned as-is.
+'''
+# Example
+text = "hello world"
+print(text.replace("java", "python"))  # "hello world"
