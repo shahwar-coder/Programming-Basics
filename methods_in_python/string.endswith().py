@@ -1,5 +1,5 @@
 '''
-Q. What does endswith() do?
+Q1. What does endswith() do?
 Ans:
 Checks whether the string ends with a specific suffix.  
 Also supports optional `start` and `end` parameters for substring checks.
@@ -19,4 +19,18 @@ print(msg.endswith("programming", 0, 25))  # False  (range ends before match)
 
 # Example 4: On empty string
 print("".endswith(""))   # True — every string (even empty) ends with ""
+
+
+
+
+'''
+Q2. Can startswith() and endswith() take tuples?
+Ans:
+Yes — you can pass a tuple of prefixes/suffixes,  
+and it returns True if the string starts/ends with *any* of them.
+'''
+# Example
+filename = "data.csv"
+print(filename.endswith((".csv", ".txt")))  # True
+print(filename.startswith(("log", "data"))) # True
 
