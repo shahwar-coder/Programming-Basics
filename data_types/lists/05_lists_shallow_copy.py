@@ -37,3 +37,16 @@ print("a:", a)    # a also changes → [[99, 2], [3, 4]]
 print("b:", b)    # b → [[99, 2], [3, 4]]
 print(a is b)     # False (different outer lists)
 print(a[0] is b[0])  # True (same inner list)
+
+
+
+'''
+Q3. How do you confirm if two lists share memory?
+Ans:
+Use the **identity operator** `is` or compare inner elements’ memory references.
+'''
+# Example
+a = [[1], [2]]
+b = a.copy()
+print(a is b)       # False (different lists)
+print(a[0] is b[0]) # True (same inner list)
