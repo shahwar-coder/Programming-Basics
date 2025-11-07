@@ -50,3 +50,14 @@ a = [[1], [2]]
 b = a.copy()
 print(a is b)       # False (different lists)
 print(a[0] is b[0]) # True (same inner list)
+
+
+
+'''
+Q4. What’s the rule of thumb for copying?
+Ans:
+✅ Use:
+- `=` → same object  
+- `.copy()` → shallow copy (flat lists)  
+- `deepcopy()` → full independent copy (nested lists)
+'''
