@@ -1,3 +1,7 @@
+"""
+THIS IS REVISION FILE : REFER MATH METHODS IN `METHODS IN PYTHON` FOLDER
+"""
+
 '''
 Q1. What are Python's most commonly used built-in math functions?
 Ans:
