@@ -2,8 +2,9 @@
 
 import random
 random.seed(10)
-print("seed(10) -> random():", random.random())
-# → Output: same value on every run with same seed
+# You cannot print random.seed(10), as it is an internal state change only.
+# If you try to print it will print None, because it returns nothing.
+
 # Sets the starting point for random numbers
 
 # NOTES:
