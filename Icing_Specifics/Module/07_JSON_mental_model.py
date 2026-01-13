@@ -1,3 +1,20 @@
+'''
+Personal mental model:
+- `s` , means string is involved.
+- no `s`, file is involved not str
+- load menas something we are bringing/loading in python setup so we would need python object here.
+- dumps means we are taking something away from python setup so away from python object.
+
+# -x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x
+
+- loads() -> str involved -> bringing to python setup -> "Json String to Python Object"
+- dumps() -> str involved -> taking away from python setup -> "Python Object to Json String"
+- load() -> file involved -> bringing to python setup -> "File to Python Object"
+- dump() -> file involved -> taking away from python setup -> "Python Object to File"
+
+- file is json file
+'''
+
 # JSON Mental Model (Quick Recall)
 
 # ---- STRING vs FILE ----
